@@ -1,0 +1,18 @@
+{
+  "name": "backend-mudar",
+  "version": "1.0.0",
+  "description": "Backend: API rest para mudar de colombia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Node",
+    "TypeScript",
+    "Express",
+    "Mongoose",
+    "Multer"
+  ],
+  "author": "Angel Daniel Pineda Blanco",
+  "license": "ISC"
+}

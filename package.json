@@ -2,9 +2,9 @@
   "name": "backend-mudar",
   "version": "1.0.0",
   "description": "Backend: API rest para mudar de colombia",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon ./src/app.ts"
   },
   "keywords": [
     "Node",

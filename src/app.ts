@@ -1,12 +1,14 @@
 // archivo principal de la aplicación. 
 
-import express from 'express';
+import express, {Request, Response} from 'express';
+
+// const {request, response} = express;
 
 const app = express ();
 
 /** Routing: enrutamiento */
 /** http://localhost:3000/ */
-app.get ('/', (req, res) => {   /**req = request, res = response */
+app.get ('/', (req : Request , res: Response) => {   /**req = request, res = response */
     const message = 'Bienvenido a la API de mudar de colombia'
     console.log(message);   //mensaje al navegador
 
@@ -15,7 +17,7 @@ app.get ('/', (req, res) => {   /**req = request, res = response */
 });
 
 /** http://localhost:3000/home (Endpoint) */
-app.get('/home', (req, res) => {
+app.get('/home', (req: Request, res: Response) => {
   const namePage = 'Home';
 
   console.log(namePage);

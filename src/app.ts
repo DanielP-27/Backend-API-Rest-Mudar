@@ -1,7 +1,7 @@
 // archivo principal de la aplicación. 
 
 import express, {Request, Response} from 'express';
-import main from './routes';
+import routeMain from './routes';
 
 // const {request, response} = express;
 
@@ -25,7 +25,8 @@ app.get('/home', (req: Request, res: Response) => {
   res.send (`<h1> ${namePage}</h1>`);
 })
 
-app.use('/', main )
+/** Middleware */
+app.use('/', routeMain );
 
 
 app.listen(3000, () => {

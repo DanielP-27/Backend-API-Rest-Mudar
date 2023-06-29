@@ -26,7 +26,8 @@ app.get('/home', (req: Request, res: Response) => {
 })
 
 /** Middleware */
-app.use('/', routeMain );
+//http://localhost:3000/api
+app.use('/api', routeMain );
 
 
 app.listen(3000, () => {

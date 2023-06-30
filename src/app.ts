@@ -1,11 +1,12 @@
-// archivo principal de la aplicación. 
-
+import 'dotenv/config'; 
 import express, {Request, Response} from 'express';
 import routeMain from './routes';
+
 
 // const {request, response} = express;
 
 const app = express ();
+const PORT = process.env.PORT  || 3001;
 
 /** Routing: enrutamiento */
 /** http://localhost:3000/ */
@@ -30,6 +31,6 @@ app.get('/home', (req: Request, res: Response) => {
 app.use('/api', routeMain );
 
 
-app.listen(3000, () => {
-  console.log('Servidor lanzado en el puerto 3000');
+app.listen(PORT, () => {
+  console.log(`Servidor en http://localhost:${PORT}`);
 });

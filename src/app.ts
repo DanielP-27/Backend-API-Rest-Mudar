@@ -31,9 +31,10 @@ app.get('/home', (req: Request, res: Response) => {
 //http://localhost:3000/api
 app.use('/api', routeMain );
 
-// db()
-//     .then(() => console.log(`MongoDB se conectó correctamete`))
-//     .catch(() => console.log(`MongoDB sufre problemas de conexión`));
+// Resolvemos la promera: conexión a Monho usando Mongoose //
+db()
+    .then(() => console.log(`MongoDB se conectó correctamete`))
+    .catch(() => console.log(`MongoDB sufre problemas de conexión`));
     
     
 

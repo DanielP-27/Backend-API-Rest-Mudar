@@ -23,8 +23,8 @@ const productSchema = new Schema(
 );
 
 // Define el modelo a partir de la estructura requerida por mongoose //
-const productModel = model ('Products', productSchema);
+const ProductModel = model ('Products', productSchema);
 
 
 // se recomienda exportar los modelos por default SIEMPRE
-export default productModel;
+export default ProductModel;
